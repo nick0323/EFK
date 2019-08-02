@@ -1,7 +1,7 @@
 # EFK
 **EFK on kubernetes**
 
-由于fluentd-daemonset.yaml使用了nodeSelector，所以需要使用fluentd收集日志的节点需要添加label.
+由于fluentd-daemonset.yaml使用了nodeSelector，所以需要为使用fluentd收集日志的节点需要添加label.
 ```
 # kubectl label nodes nodename beta.kubernetes.io/fluentd-ds-ready=true
 ```
