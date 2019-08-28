@@ -5,7 +5,7 @@
 ```
 # kubectl label nodes nodename beta.kubernetes.io/fluentd-ds-ready=true
 ```
----
+
 ```
 # kubectl get node --show-labels  
 NAME   STATUS   ROLES    AGE   VERSION   LABELS
@@ -16,7 +16,7 @@ k8s4   Ready    <none>   24h   v1.14.1   beta.kubernetes.io/arch=amd64,beta.kube
 k8s5   Ready    <none>   24h   v1.14.1   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/fluentd-ds-ready=true,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=k8s5,kubernetes.io/os=linux
 k8s6   Ready    <none>   24h   v1.14.1   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/fluentd-ds-ready=true,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=k8s6,kubernetes.io/os=linux
 ```
----
+
 ```
 # kubectl get pod -n logging  
 NAME                     READY   STATUS    RESTARTS   AGE
@@ -31,7 +31,7 @@ fluentd-es-v89xc         1/1     Running   0          23h
 fluentd-es-wlf2q         1/1     Running   0          23h
 kibana-bd6f49775-52xs9   1/1     Running   0          23h
 ```
----
+
 ```
 # kubectl get svc -n logging  
 NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)             AGE
